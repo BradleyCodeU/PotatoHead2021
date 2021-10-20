@@ -66,7 +66,8 @@ public class Potatohead
 	public String toString()
 	{
 		String output = "PotatoHead object. ";
-		output += "Number Of Eyes: " + eyeNumber + ". Color of potato: " + color + ". ";
+		output += "Number Of Eyes: " + eyeNumber;
+		output += ". Color of potato: " + color + ". ";
     // Add your instance variable to the toString() method using += HERE
 
 		
