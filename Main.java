@@ -10,6 +10,7 @@ public class Potatohead
 	// add one instance variable HERE
 	private String color;
 	private String hat;
+	private String shoes;
   
 	/*  the no argument constructor  */
 	public Potatohead()
@@ -20,6 +21,7 @@ public class Potatohead
     // initialize your instance variable HERE
 		color = "brown";
 		hat = "Top-hat";
+		shoes = "White Sneakers"
 	}
   
 
@@ -86,6 +88,28 @@ public class Potatohead
 	  }
 
 
+	/**
+	* returns string shoes 
+	*
+	* @return String shoes
+	*
+	*
+	*/
+         public String getShoes(){
+	    return shoes; 
+	  }
+
+	/**
+	*
+	*@param - newShoes is a new string that replaces String stored in shoe
+	*
+	*changes shoes to a new String "newShoes"
+	*
+	*/
+	  public void setHat(String newShoes){
+	    shoes = newShoes;
+
+
 	
 
 	
@@ -93,6 +117,7 @@ public class Potatohead
 	{
 		String output = "PotatoHead object. ";
 		output += "Number Of Eyes: " + eyeNumber;
+		output += "Current shoes: + shoes;
 		output += ". Color of potato: " + color + ". ";
 		output += "Hat the potato is wearing: " + hat + ". ";
     // Add your instance variable to the toString() method using += HERE
