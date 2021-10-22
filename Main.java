@@ -69,7 +69,7 @@ public class Potatohead
 		output += "Number Of Eyes: " + eyeNumber;
 		output += ". Color of potato: " + color + ". ";
     // Add your instance variable to the toString() method using += HERE
-
+		output += "Potato Type: " + potatoType + ". ";
 		
 		return output;
 	}
