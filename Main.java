@@ -12,6 +12,7 @@ public class Potatohead
 	private String color;
 	private String hat;
 	private String shoes;
+	private String eyeColor;
   
 	/*  the no argument constructor  */
 	public Potatohead()
@@ -24,6 +25,7 @@ public class Potatohead
 		color = "brown";
 		hat = "Top-hat";
 		shoes = "White Sneakers"
+		eyeColor = "Green";
 	}
   
 
@@ -126,6 +128,26 @@ public class Potatohead
 	*/
 	  public void setHat(String newShoes){
 	    shoes = newShoes;
+	/**
+	*
+	*@param - _eyeColor is a new string that replaces the eyeColor string
+	*
+	*changes the eye color to the new color
+	*
+	*/
+	   public void setEyeColor(String _eyeColor) {
+	      eyeColor = _eyeColor;
+        }
+	/**
+	*
+	*returns the eye color string
+	*
+	*@return String eyeColor
+	*
+	*/
+	   public String getEyeColor() {
+	      return eyeColor;
+	   }
 
 
 	
@@ -141,6 +163,7 @@ public class Potatohead
 		output += "Hat the potato is wearing: " + hat + ". ";
     // Add your instance variable to the toString() method using += HERE
 		output += "Potato Type: " + potatoType + ". ";
+		output += "Color of eyes: " + eyeColor;
 		
 		return output;
 	}
