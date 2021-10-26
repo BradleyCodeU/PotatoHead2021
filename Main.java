@@ -8,6 +8,7 @@ public class Potatohead
 	private int eyeNumber;
 	
 	// add one instance variable HERE
+	private String nose;
 	private String color;
 	private String hat;
 	private String shoes;
@@ -19,6 +20,7 @@ public class Potatohead
 		eyeNumber = 2;
 		
     // initialize your instance variable HERE
+		nose = "red";
 		color = "brown";
 		hat = "Top-hat";
 		shoes = "White Sneakers"
@@ -28,6 +30,22 @@ public class Potatohead
 	/*  VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE  */
 	
   // Add an accessor method AND a mutator method for your instance variable HERE
+	/**
+		void setNoseColor(String noseColor)
+		mutator method for nose
+		@param noseColor for what color the user wants for the nose.
+	*/
+	public void setNoseColor(String noseColor){
+		nose = noseColor;
+	}
+	/**
+		String getNoseColor()
+		accessor method for getNoseColor
+		@return nose a String describing the color of the nose of the potato.
+	*/
+	public String getNoseColor(){
+		return nose;
+	}
 	/**
 		void setColor(String _color)
 		mutator method for color
@@ -117,7 +135,8 @@ public class Potatohead
 	{
 		String output = "PotatoHead object. ";
 		output += "Number Of Eyes: " + eyeNumber;
-		output += "Current shoes: + shoes;
+		output += "Current shoes: " + shoes;
+		output += "Nose Color: " + nose;
 		output += ". Color of potato: " + color + ". ";
 		output += "Hat the potato is wearing: " + hat + ". ";
     // Add your instance variable to the toString() method using += HERE
