@@ -10,14 +10,14 @@ public class Potatohead
 	// add one instance variable HERE
 	private String color;
 	private String hat;
-	private double FeetLength;
+	private double feetLength;
   
 	/*  the no argument constructor  */
 	public Potatohead()
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
-		FeetLength = 10.5;
+		feetLength = 10.5;
 		
     // initialize your instance variable HERE
 		color = "brown";
@@ -89,17 +89,17 @@ public class Potatohead
         
         /**
          sets the Feet Size on the Potatohead
-         @Param double feetLength - first string value for the feetlength
+         @param double feetLength - value for the feetlength in millimeters
         */
-          public void setFeetLength(double feetLength){
-		feetLength = feetLength;
+          public void setFeetLength(double _feetLength){
+		feetLength = _feetLength;
 	  }
 	/**
           returns the Feet Size on the Potatohead
           @return FeetLength - Returns the full length of the Potatohead's FeetLength
         */
 	   public double getFeetLength(){
-		return FeetLength;
+		return feetLength;
            }
 }
 
@@ -115,7 +115,7 @@ public class Potatohead
 		output += "Hat the potato is wearing: " + hat + ". ";
     // Add your instance variable to the toString() method using += HERE
 		output += "Potato Type: " + potatoType + ". ";
-		output += "Potato Feet Length: " + FeetLength + ".";
+		output += "Potato Feet Length: " + feetLength + "mm.";
 		
 		return output;
 	}
