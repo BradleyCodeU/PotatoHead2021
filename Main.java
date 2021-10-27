@@ -11,14 +11,17 @@ public class Potatohead
 	private String nose;
 	private String color;
 	private String hat;
+	private double feetLength;
 	private String shoes;
 	private String eyeColor;
+
   
 	/*  the no argument constructor  */
 	public Potatohead()
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
+		feetLength = 10.5;
 		
     		// initialize your instance variable HERE
 		nose = "red";
@@ -92,9 +95,9 @@ public class Potatohead
 	*
 	*
 	*/
-         public String getHat(){
+  public String getHat(){
 	    return hat; 
-	  }
+	}
 
 	/**
 	*
@@ -103,9 +106,25 @@ public class Potatohead
 	*changes hat to a new String "newHat"
 	*
 	*/
-	  public void setHat(String newHat){
+	public void setHat(String newHat){
 	    hat = newHat;
-	  }
+	}
+        
+        /**
+         sets the Feet Size on the Potatohead
+         @param double feetLength - value for the feetlength in millimeters
+        */
+  public void setFeetLength(double _feetLength){
+		feetLength = _feetLength;
+	}
+	/**
+          returns the Feet Size on the Potatohead
+          @return FeetLength - Returns the full length of the Potatohead's FeetLength
+        */
+	public double getFeetLength(){
+		return feetLength;
+  }
+
 
 
 	/**
@@ -115,9 +134,9 @@ public class Potatohead
 	*
 	*
 	*/
-         public String getShoes(){
+  public String getShoes(){
 	    return shoes; 
-	  }
+	}
 
 	/**
 	*
@@ -126,8 +145,9 @@ public class Potatohead
 	*changes shoes to a new String "newShoes"
 	*
 	*/
-	  public void setHat(String newShoes){
+	public void setHat(String newShoes){
 	    shoes = newShoes;
+  }
 	/**
 	*
 	*@param - _eyeColor is a new string that replaces the eyeColor string
@@ -135,9 +155,9 @@ public class Potatohead
 	*changes the eye color to the new color
 	*
 	*/
-	   public void setEyeColor(String _eyeColor) {
+	public void setEyeColor(String _eyeColor) {
 	      eyeColor = _eyeColor;
-        }
+  }
 	/**
 	*
 	*returns the eye color string
@@ -145,9 +165,9 @@ public class Potatohead
 	*@return String eyeColor
 	*
 	*/
-	   public String getEyeColor() {
+	public String getEyeColor() {
 	      return eyeColor;
-	   }
+	}
 
 
 	
@@ -165,8 +185,9 @@ public class Potatohead
     		// Add your instance variable to the toString() method using += HERE
 		
 		output += "Potato Type: " + potatoType + ". ";
+		output += "Potato Feet Length: " + feetLength + "mm.";
 		output += "Color of eyes: " + eyeColor;
-		
+	
 		return output;
 	}
 }
