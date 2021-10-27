@@ -13,6 +13,7 @@ public class Potatohead
 	private String hat;
 	private double feetLength;
 	private String shoes;
+	private String glasses;
 	private String eyeColor;
 
   
@@ -27,6 +28,7 @@ public class Potatohead
 		nose = "red";
 		color = "brown";
 		hat = "Top-hat";
+	  glasses="green goggles";
 		shoes = "White Sneakers";
 		eyeColor = "Green";
 	}
@@ -147,6 +149,17 @@ public class Potatohead
 	*/
 	public void setHat(String newShoes){
 	    shoes = newShoes;
+
+        /**
+	*
+	*@param-setGlassesColor is a string that will replace the color stored in glassses with the givin parameter.
+	*
+	*turns glasses into glassesColor 
+        **/
+  public void setGlassesColor (String glassColor) 
+	{
+		  glasses=glassColor;
+
   }
 	/**
 	*
@@ -168,8 +181,18 @@ public class Potatohead
 	public String getEyeColor() {
 	      return eyeColor;
 	}
-
-
+    
+          /**
+	  *@param-getGlassesColor is a String that finds and returns the color of the glasses based on what was set in the setGlassesColor method.
+          public String getGlassesColor() 
+	  *
+	  *@return glasses color
+	  *
+	  **/
+	public String getGlassesColor()
+	{
+		  return glasses;
+	 }
 	
 
 	
@@ -181,6 +204,7 @@ public class Potatohead
 		output += "Nose Color: " + nose;
 		output += ". Color of potato: " + color + ". ";
 		output += "Hat the potato is wearing: " + hat + ". ";
+		output +- "Color of Glasses: " + glasses + "";
 		
     		// Add your instance variable to the toString() method using += HERE
 		
