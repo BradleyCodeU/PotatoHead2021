@@ -12,6 +12,7 @@ public class Potatohead
 	private String color;
 	private String hat;
 	private String shoes;
+	private int hairs;
   
 	/*  the no argument constructor  */
 	public Potatohead()
@@ -24,6 +25,7 @@ public class Potatohead
 		color = "brown";
 		hat = "Top-hat";
 		shoes = "White Sneakers"
+		hairs = 0;
 	}
   
 
@@ -105,6 +107,25 @@ public class Potatohead
 	    hat = newHat;
 	  }
 
+	/**
+	Int getHairAmount(int)
+	Gets the amount of hairs on the potato head
+	@return int hairs for the amount of hairs on the potato's head
+	*/	
+	public Int getHairAmount()
+	{
+		return this.hairs;
+	}
+	
+	/**
+		void setHairAmount(int _hairs)
+		Sets amount of hairs on potato's head		
+		@param _hairs for what the user desires.  
+	*/	
+	public void setHairAmount(int _hairs)
+	{
+		this.hairs = _hairs;
+	}
 
 	/**
 	* returns string shoes 
