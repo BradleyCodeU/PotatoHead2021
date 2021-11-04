@@ -13,6 +13,7 @@ public class Potatohead
 	private String hat;
 	private double feetLength;
 	private String shoes;
+	private int hairs;
 	private String glasses;
 	private String eyeColor;
 	private boolean hasBeard;
@@ -49,6 +50,7 @@ public class Potatohead
 		nose = "red";
 		color = "brown";
 		hat = "Top-hat";
+		hairs = 0;
 	  glasses="green goggles";
 		shoes = "White Sneakers";
 		eyeColor = "Green";
@@ -152,6 +154,25 @@ public class Potatohead
   }
 
 
+	/**
+	Int getHairAmount(int)
+	Gets the amount of hairs on the potato head
+	@return int hairs for the amount of hairs on the potato's head
+	*/	
+	public int getHairAmount()
+	{
+		return hairs;
+	}
+	
+	/**
+		void setHairAmount(int _hairs)
+		Sets amount of hairs on potato's head		
+		@param _hairs for what the user desires.  
+	*/	
+	public void setHairAmount(int _hairs)
+	{
+		this.hairs = _hairs;
+	}
 
 	/**
 	* returns string shoes 
@@ -238,10 +259,13 @@ public class Potatohead
 		output += "Nose Color: " + nose;
 		output += ". Color of potato: " + color + ". ";
 		output += "Hat the potato is wearing: " + hat + ". ";
+		output += "Potato Type: " + potatoType + ". ";
+		output += "Potato hairs: " + hairs + ". ";
 		output +- "Color of Glasses: " + glasses + "";
 		ouput += "Potato has beard: " + this.hasBeard + ".";
 		
     		// Add your instance variable to the toString() method using += HERE
+
 		
 		output += "Potato Type: " + potatoType + ". ";
 		output += "Potato Feet Length: " + feetLength + "mm.";
