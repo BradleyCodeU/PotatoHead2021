@@ -16,6 +16,26 @@ public class Potatohead
 	private String glasses;
 	private String eyeColor;
 	private boolean hasBeard;
+	private String hairColor;
+	
+	/**
+		String gethairColor()
+		accessor method for gethairColor
+		@return hair a String describing the color of the hair of the potato.
+	*/
+	
+	public String gethairColor() {
+		return hairColor;
+	}
+	/**
+		void sethairColor(String hairColor)
+		mutator method for hair
+		@param hairColor for what color the user wants for the hair.
+	*/
+	public void sethairColor (String _hairColor) {
+		hairColor = _hairColor;
+	}
+
 
   
 	/*  the no argument constructor  */
@@ -33,6 +53,8 @@ public class Potatohead
 		shoes = "White Sneakers";
 		eyeColor = "Green";
 		hasBeard = false;
+		hairColor = "Blue";
+
 	}
   
 
@@ -224,6 +246,7 @@ public class Potatohead
 		output += "Potato Type: " + potatoType + ". ";
 		output += "Potato Feet Length: " + feetLength + "mm.";
 		output += "Color of eyes: " + eyeColor;
+		output += "Hair color: " + hairColor;
 	
 		return output;
 	}
