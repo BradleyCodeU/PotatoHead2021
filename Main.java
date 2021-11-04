@@ -11,27 +11,58 @@ public class Potatohead
 	private String nose;
 	private String color;
 	private String hat;
+	private double feetLength;
 	private String shoes;
 	private int hairs;
+	private String glasses;
+	private String eyeColor;
+	private boolean hasBeard;
+	private String hairColor;
+	
+	/**
+		String gethairColor()
+		accessor method for gethairColor
+		@return hair a String describing the color of the hair of the potato.
+	*/
+	
+	public String gethairColor() {
+		return hairColor;
+	}
+	/**
+		void sethairColor(String hairColor)
+		mutator method for hair
+		@param hairColor for what color the user wants for the hair.
+	*/
+	public void sethairColor (String _hairColor) {
+		hairColor = _hairColor;
+	}
+
+
   
 	/*  the no argument constructor  */
 	public Potatohead()
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
+		feetLength = 10.5;
 		
-    // initialize your instance variable HERE
+    		// initialize your instance variable HERE
 		nose = "red";
 		color = "brown";
 		hat = "Top-hat";
-		shoes = "White Sneakers"
 		hairs = 0;
+	  glasses="green goggles";
+		shoes = "White Sneakers";
+		eyeColor = "Green";
+		hasBeard = false;
+		hairColor = "Blue";
+
 	}
   
 
 	/*  VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE  */
 	
-  // Add an accessor method AND a mutator method for your instance variable HERE
+  	// Add an accessor method AND a mutator method for your instance variable HERE
 	/**
 		void setNoseColor(String noseColor)
 		mutator method for nose
@@ -92,9 +123,9 @@ public class Potatohead
 	*
 	*
 	*/
-         public String getHat(){
+  public String getHat(){
 	    return hat; 
-	  }
+	}
 
 	/**
 	*
@@ -103,9 +134,25 @@ public class Potatohead
 	*changes hat to a new String "newHat"
 	*
 	*/
-	  public void setHat(String newHat){
+	public void setHat(String newHat){
 	    hat = newHat;
-	  }
+	}
+        
+        /**
+         sets the Feet Size on the Potatohead
+         @param double feetLength - value for the feetlength in millimeters
+        */
+  public void setFeetLength(double _feetLength){
+		feetLength = _feetLength;
+	}
+	/**
+          returns the Feet Size on the Potatohead
+          @return FeetLength - Returns the full length of the Potatohead's FeetLength
+        */
+	public double getFeetLength(){
+		return feetLength;
+  }
+
 
 	/**
 	Int getHairAmount(int)
@@ -134,9 +181,9 @@ public class Potatohead
 	*
 	*
 	*/
-         public String getShoes(){
+  public String getShoes(){
 	    return shoes; 
-	  }
+	}
 
 	/**
 	*
@@ -145,11 +192,63 @@ public class Potatohead
 	*changes shoes to a new String "newShoes"
 	*
 	*/
-	  public void setHat(String newShoes){
+	public void setHat(String newShoes){
 	    shoes = newShoes;
 
+        /**
+	*
+	*@param-setGlassesColor is a string that will replace the color stored in glassses with the givin parameter.
+	*
+	*turns glasses into glassesColor 
+        **/
+  public void setGlassesColor (String glassColor) 
+	{
+		  glasses=glassColor;
 
-	
+  }
+	/**
+	*
+	*@param - _eyeColor is a new string that replaces the eyeColor string
+	*
+	*changes the eye color to the new color
+	*
+	*/
+	public void setEyeColor(String _eyeColor) {
+	      eyeColor = _eyeColor;
+  }
+	/**
+	*
+	*returns the eye color string
+	*
+	*@return String eyeColor
+	*
+	*/
+	public String getEyeColor() {
+	      return eyeColor;
+	}
+    
+          /**
+	  *@param-getGlassesColor is a String that finds and returns the color of the glasses based on what was set in the setGlassesColor method.
+          public String getGlassesColor() 
+	  *
+	  *@return glasses color
+	  *
+	  **/
+	public String getGlassesColor()
+	{
+		  return glasses;
+	 }
+		
+	/** @param _hasBeard is a boolean variable that determines if the potato head has a beard or not */
+	public void setHasBeard(boolean _hasBeard)
+	{
+		this.hasBeard = _hasBeard;
+	}
+	/** @return hasBeard */
+	public boolean getHasBeard()
+	{
+		return this.hasBeard;
+	}
 
 	
 	public String toString()
@@ -160,10 +259,19 @@ public class Potatohead
 		output += "Nose Color: " + nose;
 		output += ". Color of potato: " + color + ". ";
 		output += "Hat the potato is wearing: " + hat + ". ";
-    // Add your instance variable to the toString() method using += HERE
 		output += "Potato Type: " + potatoType + ". ";
 		output += "Potato hairs: " + hairs + ". ";
+		output +- "Color of Glasses: " + glasses + "";
+		ouput += "Potato has beard: " + this.hasBeard + ".";
 		
+    		// Add your instance variable to the toString() method using += HERE
+
+		
+		output += "Potato Type: " + potatoType + ". ";
+		output += "Potato Feet Length: " + feetLength + "mm.";
+		output += "Color of eyes: " + eyeColor;
+		output += "Hair color: " + hairColor;
+	
 		return output;
 	}
 }
