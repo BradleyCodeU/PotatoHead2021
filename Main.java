@@ -112,9 +112,9 @@ public class Potatohead
 	Gets the amount of hairs on the potato head
 	@return int hairs for the amount of hairs on the potato's head
 	*/	
-	public Int getHairAmount()
+	public int getHairAmount()
 	{
-		return this.hairs;
+		return hairs;
 	}
 	
 	/**
@@ -162,6 +162,7 @@ public class Potatohead
 		output += "Hat the potato is wearing: " + hat + ". ";
     // Add your instance variable to the toString() method using += HERE
 		output += "Potato Type: " + potatoType + ". ";
+		output += "Potato hairs: " + hairs + ". ";
 		
 		return output;
 	}
