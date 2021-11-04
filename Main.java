@@ -32,7 +32,7 @@ public class Potatohead
 	  glasses="green goggles";
 		shoes = "White Sneakers";
 		eyeColor = "Green";
-		hasBeard = fasle;
+		hasBeard = false;
 	}
   
 
