@@ -15,6 +15,7 @@ public class Potatohead
 	private String shoes;
 	private String glasses;
 	private String eyeColor;
+	private boolean hasBeard;
 	private String hairColor;
 	
 	/**
@@ -35,6 +36,7 @@ public class Potatohead
 		hairColor = _hairColor;
 	}
 
+
   
 	/*  the no argument constructor  */
 	public Potatohead()
@@ -50,7 +52,9 @@ public class Potatohead
 	  glasses="green goggles";
 		shoes = "White Sneakers";
 		eyeColor = "Green";
+		hasBeard = false;
 		hairColor = "Blue";
+
 	}
   
 
@@ -213,7 +217,17 @@ public class Potatohead
 	{
 		  return glasses;
 	 }
-	
+		
+	/** @param _hasBeard is a boolean variable that determines if the potato head has a beard or not */
+	public void setHasBeard(boolean _hasBeard)
+	{
+		this.hasBeard = _hasBeard;
+	}
+	/** @return hasBeard */
+	public boolean getHasBeard()
+	{
+		return this.hasBeard;
+	}
 
 	
 	public String toString()
@@ -225,6 +239,7 @@ public class Potatohead
 		output += ". Color of potato: " + color + ". ";
 		output += "Hat the potato is wearing: " + hat + ". ";
 		output +- "Color of Glasses: " + glasses + "";
+		ouput += "Potato has beard: " + this.hasBeard + ".";
 		
     		// Add your instance variable to the toString() method using += HERE
 		
